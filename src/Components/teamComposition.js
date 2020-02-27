@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Table, Container, Row, Col } from 'react-bootstrap';
 import CostOfEngagementComparisonComponent from '../APICalls/projectTeamCostCall';
+import FormEmail from './form-email'
 
 export default function TeamCompositionFun() {
 
@@ -145,6 +146,12 @@ export default function TeamCompositionFun() {
                     engMan={engMan}
                     month={month}
                 />
+                <hr></hr>
+            <Row>
+                <Col>
+                    <FormEmail></FormEmail>
+                </Col>
+            </Row>
         </div>
     );
 }
